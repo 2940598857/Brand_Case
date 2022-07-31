@@ -79,7 +79,7 @@ public class BrandServlet extends BaseServlet{
                 // 接收查询条件对象（post请求）
                 BufferedReader br = request.getReader();
                 String params = br.readLine();//json字符串
-                //转为Brand
+                //转为Brand对象
                 Brand brand=JSON.parseObject(params,Brand.class);
 
 
