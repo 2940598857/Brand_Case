@@ -85,7 +85,7 @@ public class BrandServlet extends BaseServlet{
 
                 //2. 调用service查询
                 PageBean<Brand> pageBean=brandService.selectByPageAndCondition(currentPage,PageSize,brand);
-                //转为JSON
+                //转为JSON对象
                 String jsonString= JSON.toJSONString(pageBean);
                 //写入数据到浏览器
                 response.setContentType("text/json;charset=utf-8");
